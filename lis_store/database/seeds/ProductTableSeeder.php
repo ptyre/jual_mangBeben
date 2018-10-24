@@ -35,8 +35,8 @@ class ProductTableSeeder extends Seeder
         $product->save();
 
         $product = new \App\Product([
-            'imagePath' => 'images/Lenovo 330-15IGM 15.6.jpg',
-            'title' => 'Lenovo 330-15IGM 15.6',
+            'imagePath' => 'images/palpie.jpg',
+            'title' => 'Palpie',
             'description' => 'laptop lenovo generasi terbaru',
             'price' => 3700000,
             'typeProduct' => 'electron'
