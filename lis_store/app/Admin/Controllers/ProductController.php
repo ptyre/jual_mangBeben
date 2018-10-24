@@ -124,7 +124,7 @@ class ProductController extends Controller
     {
         $form = new Form(new Product);
 
-        $form->text('imagePath', 'ImagePath');
+        $form->image('imagePath', 'ImagePath');
         $form->text('title', 'Title');
         $form->text('description', 'Description');
         $form->number('price', 'Price');
