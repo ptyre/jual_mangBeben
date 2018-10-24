@@ -1,4 +1,4 @@
-@extends('layouts.master', ['title' => 'Shopping cart'])
+@extends('layouts.master', ['title' => 'Order Drink Or Foods'])
 
 @section('link')
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet"/>

@@ -13,7 +13,7 @@
     
     <ul class="navbar-nav ml-auto">
     <li class="nav-item">
-        <a class="nav-link" href="{{route ('product.shoppingCart')}}"><i class="fa fa-shopping-cart"></i> Shopping Cart 
+        <a class="nav-link" href="{{route ('product.shoppingCart')}}"><i class="fa fa-shopping-cart"></i> Order List 
         <span class="qty">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
       </a>
       </li>

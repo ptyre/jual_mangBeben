@@ -4,8 +4,8 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <h1>Lis Store</h1>
-              <span class="subheading">Jual Beli Lis store</span>
+              <h1>Mang Beben</h1>
+              <span class="subheading">Order Delecius Food</span>
             </div>
           </div>
         </div>
