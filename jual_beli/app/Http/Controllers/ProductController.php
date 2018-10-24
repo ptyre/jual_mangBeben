@@ -10,8 +10,8 @@ class ProductController extends Controller
 {
     public function getIndex()
     {
-        $makanans = tb_makanan::all();
-        $minumans = tb_minuman::all();
-        return view('shop.index', ['makanan' => $makanans], ['minuman' => $minumans]);
+        $foods = food::all();
+        $drinks = drink::all();
+        return view('shop.index', ['food' => $foods], ['drink' => $drinks]);
     }
 }

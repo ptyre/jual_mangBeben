@@ -12,7 +12,7 @@ class CreateTbMakananTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('tb_makanan', function(Blueprint $table)
+		Schema::create('foods', function(Blueprint $table)
 		{
 			$table->increments('id_makanan');
 			$table->string('nama', 50);

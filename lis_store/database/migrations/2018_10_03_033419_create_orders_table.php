@@ -18,13 +18,8 @@ class CreateOrdersTable extends Migration
             $table->timestamps();
             $table->integer('user_id');
             $table->text('cart');
-            $table->text('address');
             $table->string('name');
-            $table->string('city');
-            $table->string('country');
-            $table->string('zip_code');
-            $table->string('tel');
-            $table->string('payment_id');
+           
             
         });
     }

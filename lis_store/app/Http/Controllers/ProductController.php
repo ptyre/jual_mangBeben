@@ -86,28 +86,13 @@ class ProductController extends Controller
         $cart = new Cart($oldCart);
         $total = $cart->totalPrice;
         
-        try{
-        Stripe::setApiKey('sk_test_1wkjHiVVy9DAbhffiZ4v0TgT');
-
-        $customer = Customer::create(array(
-            'email' => $request->stripeEmail,
-            'source'  => $request->stripeToken
-        ));
-
-        $charge = Charge::create(array(
-            'customer' => $customer->id,
-            'amount'   =>  $total * 100,
-            'currency' => 'usd'
-        ));
+       
 
          $order = new Order();
                 $order->cart = serialize($cart);
-                $order->address = $request->input('address');
+               
                 $order->name = $request->input('name');
-                $order->city = $request->input('city');
-                $order->country = $request->input('country');
-                $order->zip_code = $request->input('zip_code');
-                $order->tel = $request->input('tel');
+                
 
                 $order->payment_id = $charge->id;
 
@@ -115,9 +100,6 @@ class ProductController extends Controller
       //  $request->session()->forget('cart');
       Session::forget('cart');
         return redirect()->route('product.index')->with('success','Produk berhasil dibeli');
-    }
-    catch (\Exception $ex) {
-    return $ex->getMessage();
-    }
+    
     }
 }

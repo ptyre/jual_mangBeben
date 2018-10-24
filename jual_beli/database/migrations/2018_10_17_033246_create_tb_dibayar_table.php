@@ -12,7 +12,7 @@ class CreateTbDibayarTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('tb_dibayar', function(Blueprint $table)
+		Schema::create('bills', function(Blueprint $table)
 		{
 			$table->integer('id_struk');
 			$table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
