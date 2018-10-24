@@ -12,20 +12,25 @@ class ProductTableSeeder extends Seeder
     public function run()
     {
         $product = new \App\Product([
-            'imagePath' => 'images/harry_potter.jpg',
-            'title' => 'Harry Potter',
-            'description' => 'BOring',
-            'price' => 70000,
-            'typeProduct' => 'book'
+            'imagePath' => 'images/airmineral.jpg',
+            'title' => 'Air Mineral',
+            'description' => 'Air mineral adalah air yang mengandung mineral atau bahan-bahan 
+            larut lain yang mengubah rasa atau memberi nilai-nilai terapi. Banyak kandungan Garam, sulfur, dan 
+            gas-gas yang larut di dalam air ini. Air mineral biasanya masih memiliki buih. Air mineral bersumber 
+            dari mata air yang berada di alam.',
+            'price' => 5000,
+            'typeProduct' => 'Drink'
         ]);
         $product->save();
 
         $product = new \App\Product([
-            'imagePath' => 'images/HP 250 G5 i5 Laptop 2SY46ES.jpg',
-            'title' => 'HP 250 G5 i5 Laptop 2SY46ES',
-            'description' => 'Laptop lenofo generasi 5 yang murah',
-            'price' => 4000000,
-            'typeProduct' => 'electronic'
+            'imagePath' => 'images/mizone.jpg',
+            'title' => 'Mizone',
+            'description' => 'Minuman isotonik bernutrisi dengan rasa dan aroma yang unik Lychee & Lemon.
+            Dengan kemasan botol yang mudah dibawa dan dikonsumsi kapan saja.
+            Aroma dan rasanya yang unik membuat badan, pikiran, dan semangat Anda Ok terus',
+            'price' => 8000,
+            'typeProduct' => 'Drink'
         ]);
         $product->save();
 
