@@ -36,28 +36,103 @@ class ProductTableSeeder extends Seeder
 
         $product = new \App\Product([
             'imagePath' => 'images/palpie.jpg',
-            'title' => 'Palpie',
-            'description' => 'laptop lenovo generasi terbaru',
-            'price' => 3700000,
-            'typeProduct' => 'electron'
+            'title' => 'Palpie Orange',
+            'description' => 'Minuman penyegar ketika badmood, dan khasiat jeruk yang membuat kepala menjadi fresh',
+            'price' => 8000,
+            'typeProduct' => 'drink'
         ]);
         $product->save();
 
         $product = new \App\Product([
-            'imagePath' => 'images/ReZero starting live.jpg',
-            'title' => 'ReZero starting live',
-            'description' => 'light novel jepang re zero',
-            'price' => 60000,
-            'typeProduct' => 'book'
+            'imagePath' => 'images/pocarisweet.jpg',
+            'title' => 'Pocari Sweet',
+            'description' => 'Minuman isotonik sebagai 
+            pengganti cairan tubuh yang hilang setiap harinya dan untuk menghilanhkan dehidrasi',
+            'price' => 6000,
+            'typeProduct' => 'drink'
         ]);
         $product->save();
 
         $product = new \App\Product([
-            'imagePath' => 'images/Apple iPhone 6S (Gold, 32GB).jpg',
-            'title' => 'Apple iPhone 6S (Gold, 32GB)',
-            'description' => 'new iPhone 6s dengan harga murah',
-            'price' => 3000000,
-            'typeProduct' => 'electronic'
+            'imagePath' => 'images/tehbotolsosro.jpg',
+            'title' => 'Teh Botol Sosro',
+            'description' => 'Minuman segar yg membuat pertahanan badan semakin kuat',
+            'price' => 10000,
+            'typeProduct' => 'drink'
+        ]);
+        $product->save();
+
+        product = new \App\Product([
+            'imagePath' => 'images/tehgelas.jpg',
+            'title' => 'Teh Gelas',
+            'description' => 'Minuman seduhan daun the berkualitas dan gula pasir bermutu. Minuman teh pilihan di setiap suasana',
+            'price' => 2000,
+            'typeProduct' => 'drink'
+        ]);
+        $product->save();
+
+         $product->save();
+
+        product = new \App\Product([
+            'imagePath' => 'images/tehkotak.jpg',
+            'title' => 'Teh Kotak',
+            'description' => ' minuman dalam kemasan yang dapat diminum kapan saja dan menyajikan sensasi rasa terbaik dari teh alami',
+            'price' => 4000,
+            'typeProduct' => 'drink'
+        ]);
+        $product->save();
+
+        product = new \App\Product([
+            'imagePath' => 'images/tehpucuk.jpg',
+            'title' => 'Teh pucuk',
+            'description' => 'minuman teh beraroma melati dibuat dengan pucuk daun teh pilihan dengan ekstrak melati yang menyegarkan',
+            'price' => 7000,
+            'typeProduct' => 'drink'
+        ]);
+        $product->save();
+
+        product = new \App\Product([
+            'imagePath' => 'images/batagor.jpg',
+            'title' => 'Batagor',
+            'description' => 'Makanan mahasiswa ketika pengganti nasi',
+            'price' => 7000,
+            'typeProduct' => 'makanan'
+        ]);
+        $product->save();
+
+        product = new \App\Product([
+            'imagePath' => 'images/batagorbaso.jpg',
+            'title' => 'Batagor Baso',
+            'description' => 'Makanan mahasiswa ketika pengganti nasi',
+            'price' => 8000,
+            'typeProduct' => 'makanan'
+        ]);
+        $product->save();
+
+        product = new \App\Product([
+            'imagePath' => 'images/batagormie.jpg',
+            'title' => 'Batagor Mie',
+            'description' => 'Makanan mahasiswa ketika pengganti nasi',
+            'price' => 9000,
+            'typeProduct' => 'makanan'
+        ]);
+        $product->save();
+
+        product = new \App\Product([
+            'imagePath' => 'images/batagormiebaso.jpg',
+            'title' => 'Batagor Mie Baso',
+            'description' => 'Makanan mahasiswa ketika pengganti nasi',
+            'price' => 12000,
+            'typeProduct' => 'makanan'
+        ]);
+        $product->save();
+
+        product = new \App\Product([
+            'imagePath' => 'images/miebaso.jpg',
+            'title' => 'Mie Baso',
+            'description' => 'Makanan mahasiswa ketika pengganti nasi',
+            'price' => 10000,
+            'typeProduct' => 'makanan'
         ]);
         $product->save();
     }
