@@ -39,7 +39,7 @@ class ProductTableSeeder extends Seeder
             'title' => 'Lenovo 330-15IGM 15.6',
             'description' => 'laptop lenovo generasi terbaru',
             'price' => 3700000,
-            'typeProduct' => 'electronic'
+            'typeProduct' => 'electron'
         ]);
         $product->save();
 
