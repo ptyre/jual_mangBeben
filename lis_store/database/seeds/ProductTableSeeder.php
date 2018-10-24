@@ -14,23 +14,18 @@ class ProductTableSeeder extends Seeder
         $product = new \App\Product([
             'imagePath' => 'images/airmineral.jpg',
             'title' => 'Air Mineral',
-            'description' => 'Air mineral adalah air yang mengandung mineral atau bahan-bahan 
-            larut lain yang mengubah rasa atau memberi nilai-nilai terapi. Banyak kandungan Garam, sulfur, dan 
-            gas-gas yang larut di dalam air ini. Air mineral biasanya masih memiliki buih. Air mineral bersumber 
-            dari mata air yang berada di alam.',
+            'description' => 'Air mineral bersumber dari mata air yang berada di alam.',
             'price' => 5000,
-            'typeProduct' => 'Drink'
+            'typeProduct' => 'drink'
         ]);
         $product->save();
 
         $product = new \App\Product([
             'imagePath' => 'images/mizone.jpg',
             'title' => 'Mizone',
-            'description' => 'Minuman isotonik bernutrisi dengan rasa dan aroma yang unik Lychee & Lemon.
-            Dengan kemasan botol yang mudah dibawa dan dikonsumsi kapan saja.
-            Aroma dan rasanya yang unik membuat badan, pikiran, dan semangat Anda Ok terus',
+            'description' => 'Minuman isotonik bernutrisi dengan rasa dan aroma yang unik Lychee & Lemon.',
             'price' => 8000,
-            'typeProduct' => 'Drink'
+            'typeProduct' => 'drink'
         ]);
         $product->save();
 
@@ -62,7 +57,7 @@ class ProductTableSeeder extends Seeder
         ]);
         $product->save();
 
-        product = new \App\Product([
+        $product = new \App\Product([
             'imagePath' => 'images/tehgelas.jpg',
             'title' => 'Teh Gelas',
             'description' => 'Minuman seduhan daun the berkualitas dan gula pasir bermutu. Minuman teh pilihan di setiap suasana',
@@ -73,7 +68,7 @@ class ProductTableSeeder extends Seeder
 
          $product->save();
 
-        product = new \App\Product([
+        $product = new \App\Product([
             'imagePath' => 'images/tehkotak.jpg',
             'title' => 'Teh Kotak',
             'description' => ' minuman dalam kemasan yang dapat diminum kapan saja dan menyajikan sensasi rasa terbaik dari teh alami',
@@ -82,7 +77,7 @@ class ProductTableSeeder extends Seeder
         ]);
         $product->save();
 
-        product = new \App\Product([
+        $product = new \App\Product([
             'imagePath' => 'images/tehpucuk.jpg',
             'title' => 'Teh pucuk',
             'description' => 'minuman teh beraroma melati dibuat dengan pucuk daun teh pilihan dengan ekstrak melati yang menyegarkan',
@@ -91,48 +86,48 @@ class ProductTableSeeder extends Seeder
         ]);
         $product->save();
 
-        product = new \App\Product([
+        $product = new \App\Product([
             'imagePath' => 'images/batagor.jpg',
             'title' => 'Batagor',
             'description' => 'Makanan mahasiswa ketika pengganti nasi',
             'price' => 7000,
-            'typeProduct' => 'makanan'
+            'typeProduct' => 'food'
         ]);
         $product->save();
 
-        product = new \App\Product([
+        $product = new \App\Product([
             'imagePath' => 'images/batagorbaso.jpg',
             'title' => 'Batagor Baso',
             'description' => 'Makanan mahasiswa ketika pengganti nasi',
             'price' => 8000,
-            'typeProduct' => 'makanan'
+            'typeProduct' => 'food'
         ]);
         $product->save();
 
-        product = new \App\Product([
+        $product = new \App\Product([
             'imagePath' => 'images/batagormie.jpg',
             'title' => 'Batagor Mie',
             'description' => 'Makanan mahasiswa ketika pengganti nasi',
             'price' => 9000,
-            'typeProduct' => 'makanan'
+            'typeProduct' => 'food'
         ]);
         $product->save();
 
-        product = new \App\Product([
+        $product = new \App\Product([
             'imagePath' => 'images/batagormiebaso.jpg',
             'title' => 'Batagor Mie Baso',
             'description' => 'Makanan mahasiswa ketika pengganti nasi',
             'price' => 12000,
-            'typeProduct' => 'makanan'
+            'typeProduct' => 'food'
         ]);
         $product->save();
 
-        product = new \App\Product([
+        $product = new \App\Product([
             'imagePath' => 'images/miebaso.jpg',
             'title' => 'Mie Baso',
             'description' => 'Makanan mahasiswa ketika pengganti nasi',
             'price' => 10000,
-            'typeProduct' => 'makanan'
+            'typeProduct' => 'food'
         ]);
         $product->save();
     }
