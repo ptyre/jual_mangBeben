@@ -18,57 +18,9 @@
 		<div class="row">
 			<div class="col-md-7">
 				<!-- Billing Details -->
-						<form action="/charge" method="post" id="checkout-form">
-						<div class="billing-details">
-							<div class="section-title">
-								
-								<h3 class="title">Billing address</h3>
-							</div>
-							<!-- DEtail tentang form -->
-							
-							
-							<div class="form-group">
-								<input class="input" type="text" name="name" placeholder="Name">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="address" placeholder="Address">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="city" placeholder="City">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="country" placeholder="Country">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="zip_code" placeholder="ZIP Code">
-							</div>
-							<div class="form-group">
-								<input class="input" type="tel" name="tel" placeholder="Telephone">
-							</div>
-							
-						</div>
-
-						 
-					   {{ csrf_field() }}
-					   <script
-                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                     data-key="pk_test_NNDxbd1FIp6TFLgBFjLEe3Hq"
-                    data-amount={{$totalPrice * 100}}
-                    data-name="LIS STORE"
-                    data-description="Online course about integrating Stripe"
-                    data-image="{{images/logo_lis.jpg}}
-                    data-locale="auto"
-                    data-currency="usd">
-					</script>
-					</form>
+						
 					<!-- DEtail tentang form -->
-						<!-- /Billing Details -->
-
-						<!-- Order notes -->
-						<div class="order-notes">
-							<textarea class="input" placeholder="Order Notes"></textarea>
-						</div>
-						<!-- /Order notes -->
+						<!-- /Billing Details -->						
 					</div>
 					<div class="col-md-5 order-details">
 						<div class="section-title text-center">
@@ -77,10 +29,9 @@
 					<div class="order-summary">
 							<div class="order-col">
 								<div><strong>PRODUCT</strong></div>
-								
 							</div>
 					@foreach($product as $product)
-							
+				
 
 						
 						
@@ -98,10 +49,26 @@
 								<div><strong>TOTAL</strong></div>
 								<div><strong class="order-total">$ {{$totalPrice}}</strong></div>
 							</div>
+							
 					   </div>
 					  
 					</div>
 				</ul>
+				<form action="/charge" method="post" id="checkout-form">
+						<div class="billing-details">
+							<div class="section-title">
+								<h3 class="title">Nama Pemesan</h3>
+							</div>
+							<!-- DEtail tentang form -->
+							<div class="form-group">
+								<input class="input" type="text" name="name" placeholder="Name">
+							</div>
+						</div>						 
+					   {{ csrf_field() }}
+					   <button type="submit"  class="primary-btn order-submit">Pesan</button>
+					    </div>
+				
+				</form>
 			</div>
 	</div>
 	</div>

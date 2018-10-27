@@ -93,13 +93,13 @@ class ProductController extends Controller
                
                 $order->name = $request->input('name');
                 
-
-                $order->payment_id = $charge->id;
+               
 
                 Auth::user()->orders()->save($order);
       //  $request->session()->forget('cart');
       Session::forget('cart');
         return redirect()->route('product.index')->with('success','Produk berhasil dibeli');
+    
     
     }
 }
