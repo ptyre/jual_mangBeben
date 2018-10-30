@@ -21,7 +21,7 @@ class ProductTableSeeder extends Seeder
         $product->save();
 
         $product = new \App\Product([
-            'imagePath' => 'images/mizone.jpg',
+            'imagePath' => 'images/mizoness.jpg',
             'title' => 'Mizone',
             'description' => 'Minuman isotonik bernutrisi dengan rasa dan aroma yang unik Lychee & Lemon.',
             'price' => 8000,
